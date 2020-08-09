@@ -47,15 +47,17 @@ public class UserServletResults extends HttpServlet {
     	ResultsService resultservice = new ResultsService();  
 		Results form = new Results();	
 
-		String application_link = request.getParameter("application_link");
+		
         int results_id = Integer.parseInt(request.getParameter("results_id"));
-        int application_id = Integer.parseInt(request.getParameter("application_id"));
+        String application_link = request.getParameter("application_link");
         String interview_progress = request.getParameter("interview_progress");
+        int application_id = Integer.parseInt(request.getParameter("application_id"));
         
-		form.setApplicationId(application_id);
-		form.setResultsId(results_id);
-		form.setApplicationLink(application_link);
+        form.setResultsId(results_id);
+        form.setApplicationLink(application_link);
 		form.setInterviewProgress(interview_progress);
+		form.setApplicationId(application_id);
+		
 		
 		try {
 			resultservice.registResults(form);

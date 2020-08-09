@@ -1,0 +1,15 @@
+127.0.0.1 - - [31/Jul/2020:23:13:19 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:20 +0530] "GET /CS480Demo/jsps/main.jsp HTTP/1.1" 200 1339
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:20 +0530] "GET /CS480Demo/jsps/body.jsp;jsessionid=F3DBDBEAF31A81967B068E4F9BBBA252 HTTP/1.1" 200 648
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:20 +0530] "GET /CS480Demo/jsps/top.jsp;jsessionid=F3DBDBEAF31A81967B068E4F9BBBA252 HTTP/1.1" 200 1433
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:22 +0530] "GET /CS480Demo/jsps/user/login.jsp HTTP/1.1" 200 939
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:26 +0530] "GET /CS480Demo/jsps/user/regist.jsp HTTP/1.1" 200 1193
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:29 +0530] "GET /CS480Demo/jsps/user/initialize.jsp HTTP/1.1" 200 808
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:33 +0530] "GET /CS480Demo/jsps/user/initialize.jsp HTTP/1.1" 200 808
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:37 +0530] "GET /CS480Demo/jsps/user/ResultsList.jsp HTTP/1.1" 200 740
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:43 +0530] "GET /CS480Demo/jsps/user/ApplicationsList.jsp HTTP/1.1" 200 906
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:51 +0530] "GET /CS480Demo/jsps/user/companiesList.jsp HTTP/1.1" 200 840
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:56 +0530] "GET /CS480Demo/jsps/user/ApplicationsList.jsp HTTP/1.1" 200 906
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:13:58 +0530] "GET /UserServletApplications/new HTTP/1.1" 404 782
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:14:02 +0530] "GET /CS480Demo/jsps/user/companiesList.jsp HTTP/1.1" 200 840
+0:0:0:0:0:0:0:1 - - [31/Jul/2020:23:14:03 +0530] "GET /CS480Demo/jsps/user/companies.jsp?action=/new HTTP/1.1" 200 1793

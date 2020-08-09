@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Complex Query 1</title>
+</head>
+<body>
+	<h1>Complex Query 1</h1>
+	
+	List all companies which offer job greater than $100.
+	
+	<table border='1'>
+          <tr><th>Company Name</th><th>Salary</th></tr>
+
+          <sql:query var="qryPosts" >
+                  SELECT company_name, estimatedSalary FROM companies join companies.company_id = application.company_id On Applications WHERE estimatedSalary > 100
+          </sql:query>
+
+       <c:forEach var="row" items="${qryPosts.rows}">
+	        <tr>
+               <td><c:out value="${row.company_name}" /></td>
+               <td><c:out value="${row.estimatedSalary}"/></td>
+	        </tr>
+          </c:forEach>
+        </table>
+</body>
+</html>

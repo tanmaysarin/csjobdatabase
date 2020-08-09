@@ -24,9 +24,9 @@ public class ResultsDao {
 			String sql = "insert into results values(?,?,?,?)";
 			PreparedStatement statement = connect.prepareStatement(sql);
 			statement.setInt(1, result.getResultsId());
-	        statement.setInt(2, result.getApplicationId());
-	        statement.setString(3, result.getApplicationLink());
-	        statement.setString(4, result.getInterviewProgress());
+			statement.setString(2, result.getApplicationLink());
+	        statement.setString(3, result.getInterviewProgress());
+	        statement.setInt(4, result.getApplicationId());
 		    statement.executeUpdate();
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
@@ -48,9 +48,9 @@ public class ResultsDao {
 			while(resultSet.next()){
 				Results comp = new Results();
 				comp.setResultsId(resultSet.getInt("results_id"));
-				comp.setApplicationId(resultSet.getInt("application_id"));
-	    		comp.setApplicationLink(resultSet.getString("application_link"));
+				comp.setApplicationLink(resultSet.getString("application_link"));
 	    		comp.setInterviewProgress(resultSet.getString("interview_progress"));
+				comp.setApplicationId(resultSet.getInt("application_id"));
 	    		list.add(comp);
 			 }
 			 
@@ -84,12 +84,12 @@ public class ResultsDao {
 			Connection connect = DriverManager
 			          .getConnection("jdbc:mysql://localhost:3306/csjobdatabase?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" , "root" ,"Tanmay@01");
 								
-			String sql = "UPDATE results SET results_id = ?, application_id = ?, application_link = ?, interview_progress= ? WHERE results_id = ?";
+			String sql = "UPDATE Results SET results_id = ?, application_link = ? , interview_progress= ?, application_id = ? WHERE results_id = ?";
 			PreparedStatement statement = connect.prepareStatement(sql);
 			statement.setInt(1, result.getResultsId());
-			statement.setInt(2, result.getApplicationId());
-	        statement.setString(3, result.getApplicationLink());
-	        statement.setString(4, result.getInterviewProgress());
+			statement.setString(2, result.getApplicationLink());
+			statement.setString(3, result.getInterviewProgress());
+			statement.setInt(4, result.getApplicationId());
 	        statement.setInt(5, result.getResultsId());
 		    boolean updated = statement.executeUpdate() > 0; 
 		    return updated;
@@ -116,9 +116,9 @@ public class ResultsDao {
 		    	int cid = resultSet.getInt("results_id");
 		    	if(cid == results_id){
 		    		comp.setResultsId(resultSet.getInt("results_id"));
-		    		comp.setApplicationId(resultSet.getInt("application_id"));
 		    		comp.setApplicationLink(resultSet.getString("application_link"));
-		    		comp.setInterviewProgress(resultSet.getString("interview_progress"));  		
+		    		comp.setInterviewProgress(resultSet.getString("interview_progress"));
+		    		comp.setApplicationId(resultSet.getInt("application_id"));
 		    	}
 		    }
 		} catch(SQLException e) {

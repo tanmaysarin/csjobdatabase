@@ -89,7 +89,7 @@ public class ApplicationsDao {
 			Connection connect = DriverManager
 			          .getConnection("jdbc:mysql://localhost:3306/csjobdatabase?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" , "root" ,"Tanmay@01");
 								
-			String sql = "UPDATE Applications SET id = ?, location = ?, position = ?, jobDescription= ?, estimatedSalary = ? WHERE id = ?";
+			String sql = "UPDATE Applications SET id = ?, location = ?, position = ?, jobDescription= ?, estimatedSalary = ?, company_id = ? WHERE id = ?";
 			PreparedStatement statement = connect.prepareStatement(sql);
 			statement.setInt(1, application.getId());
 	        statement.setString(2, application.getLocation());

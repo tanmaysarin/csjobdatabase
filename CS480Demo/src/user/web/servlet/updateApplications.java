@@ -40,7 +40,7 @@ public class updateApplications extends HttpServlet {
 			String position = request.getParameter("position");
 			String jobDescription = request.getParameter("jobDescription");
 			float estimatedSalary = Float.parseFloat(request.getParameter("estimatedSalary"));
-			int company_id = Integer.parseInt(request.getParameter("compan_id"));
+			int company_id = Integer.parseInt(request.getParameter("company_id"));
 			
 			Applications hosp = new Applications(id, location, position, jobDescription, estimatedSalary, company_id);
 			

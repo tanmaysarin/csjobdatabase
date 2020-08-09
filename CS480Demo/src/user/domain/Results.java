@@ -22,7 +22,7 @@ public class Results {
         this.results_id = results_id;
     }
      
-    public Results(int results_id, int application_id, String application_link, String interview_progress) {
+    public Results(int results_id, String application_link, String interview_progress, int application_id) {
     	this.results_id = results_id;
     	this.application_id = application_id;
     	this.application_link = application_link;

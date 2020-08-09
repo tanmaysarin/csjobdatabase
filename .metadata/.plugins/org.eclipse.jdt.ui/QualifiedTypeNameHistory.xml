@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="user.dao.InitializeDao"/>
+    <fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="user.dao.companiesDao"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="user.domain.companies"/>
+    <fullyQualifiedTypeName name="user.service.companiesService"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="user.dao.ApplicationsDao"/>
+    <fullyQualifiedTypeName name="user.domain.Applications"/>
+    <fullyQualifiedTypeName name="user.service.ApplicationsService"/>
+    <fullyQualifiedTypeName name="user.dao.ResultsDao"/>
+    <fullyQualifiedTypeName name="user.service.ResultsService"/>
+    <fullyQualifiedTypeName name="user.domain.Results"/>
+</qualifiedTypeNameHistroy>

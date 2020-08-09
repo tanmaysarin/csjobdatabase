@@ -92,9 +92,9 @@ public class InitializeDao {
 							"jobDescription VARCHAR (500), " +        //Added varchar job description
 							"estimatedSalary INTEGER," +                //Added money for estimatedSalary
 							"company_id INTEGER, " +                    //Added company_id as a foreign key
-							"FOREIGN KEY ( company_id ) REFERENCES companies( company_id ) " +
-							"ON DELETE CASCADE " +
-							"ON UPDATE CASCADE, " +
+//							"FOREIGN KEY ( company_id ) REFERENCES companies( company_id ) " +
+//							"ON DELETE CASCADE " +
+//							"ON UPDATE CASCADE, " +
 							"PRIMARY KEY ( id ))";
 			statement.executeUpdate(sqlstmt);
 			
@@ -138,9 +138,9 @@ public class InitializeDao {
     							"application_link VARCHAR(100), " +
     							"interview_progress VARCHAR(50), " +
     							"application_id INTEGER, " +
-    							"FOREIGN KEY ( application_id ) REFERENCES applications( id ) " +
-    							"ON DELETE CASCADE " +
-    							"ON UPDATE CASCADE, " +
+//    							"FOREIGN KEY ( application_id ) REFERENCES applications( id ) " +
+//    							"ON DELETE CASCADE " +
+//    							"ON UPDATE CASCADE, " +
     							"PRIMARY KEY ( results_id ))";
     			statement.executeUpdate(sqlstmt1);
     			

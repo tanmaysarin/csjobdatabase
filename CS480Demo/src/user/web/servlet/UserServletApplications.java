@@ -43,7 +43,7 @@ public class UserServletApplications extends HttpServlet {
         String position = request.getParameter("position");
         String jobDescription = request.getParameter("jobDescription");
         Float estimatedSalary = Float.parseFloat(request.getParameter("estimatedSalary"));
-        int company_id = Integer.parseInt(request.getParameter("comany_name"));
+        int company_id = Integer.parseInt(request.getParameter("company_id"));
         
 		form.setLocation(location);
 		form.setId(id);

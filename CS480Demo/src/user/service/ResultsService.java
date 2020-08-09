@@ -46,8 +46,8 @@ public class ResultsService {
 		boolean update = ResultsDao.updateResults(comp);
 		return update;
 	}
-	public Results getResultByID(int result_id) throws InstantiationException, IllegalAccessException, ClassNotFoundException{
-		Results finding = ResultsDao.getResultsByID(result_id);
+	public Results getResultByID(int results_id) throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		Results finding = ResultsDao.getResultsByID(results_id);
 		return finding;
 	}
 }

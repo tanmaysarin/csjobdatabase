@@ -36,11 +36,12 @@ public class updateResults extends HttpServlet {
 		ResultsService resultservice = new ResultsService();
 		try {
 			int results_id = Integer.parseInt(request.getParameter("results_id"));
-			int application_id = Integer.parseInt(request.getParameter("application_id"));
 			String application_link = request.getParameter("application_link");
 			String interview_progress = request.getParameter("interview_progress");
+			int application_id = Integer.parseInt(request.getParameter("application_id"));
 			
-			Results hosp = new Results(results_id, application_id, application_link, interview_progress);
+			
+			Results hosp = new Results(results_id, application_link, interview_progress, application_id);
 			
 			resultservice.updateResults(hosp);
 		} catch (InstantiationException | IllegalAccessException

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>CSC4710 Demo</display-name>
+  <servlet>
+    <description></description>
+    <display-name>InitServlet</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>user.web.servlet.InitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/InitServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+	<description/>
+	<display-name>deletecompanies</display-name>
+	<servlet-name>deletecompanies</servlet-name>
+	<servlet-class>user.web.servlet.deletecompanies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>deletecompanies</servlet-name>
+	<url-pattern>/deletecompanies</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<description/>
+	<display-name>listAllCompanies</display-name>
+	<servlet-name>listAllCompanies</servlet-name>
+	<servlet-class>user.web.servlet.listAllCompanies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>listAllCompanies</servlet-name>
+	<url-pattern>/listAllCompanies</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<description/>
+	<display-name>showEditForm</display-name>
+	<servlet-name>showEditForm</servlet-name>
+	<servlet-class>user.web.servlet.showEditForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>showEditForm</servlet-name>
+	<url-pattern>/showEditForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<description/>
+	<display-name>updatecompanies</display-name>
+	<servlet-name>updatecompanies</servlet-name>
+	<servlet-class>user.web.servlet.updatecompanies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>updatecompanies</servlet-name>
+	<url-pattern>/updatecompanies</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletcompanies</display-name>
+    <servlet-name>UserServletcompanies</servlet-name>
+    <servlet-class>user.web.servlet.UserServletcompanies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletcompanies</servlet-name>
+    <url-pattern>/UserServletcompanies</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+	<description/>
+	<display-name>deleteApplications</display-name>
+	<servlet-name>deleteApplications</servlet-name>
+	<servlet-class>user.web.servlet.deleteApplications</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>deleteApplications</servlet-name>
+	<url-pattern>/deleteApplications</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<description/>
+	<display-name>listAllApplications</display-name>
+	<servlet-name>listAllApplications</servlet-name>
+	<servlet-class>user.web.servlet.listAllApplications</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>listAllApplications</servlet-name>
+	<url-pattern>/listAllApplications</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<description/>
+	<display-name>showEditFormApplications</display-name>
+	<servlet-name>showEditFormApplications</servlet-name>
+	<servlet-class>user.web.servlet.showEditFormApplications</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>showEditFormApplications</servlet-name>
+	<url-pattern>/showEditFormApplications</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<description/>
+	<display-name>updateApplications</display-name>
+	<servlet-name>updateApplications</servlet-name>
+	<servlet-class>user.web.servlet.updateApplications</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>updateApplications</servlet-name>
+	<url-pattern>/updateApplications</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletApplications</display-name>
+    <servlet-name>UserServletApplications</servlet-name>
+    <servlet-class>user.web.servlet.UserServletApplications</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletApplications</servlet-name>
+    <url-pattern>/UserServletApplications</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletResults</display-name>
+    <servlet-name>UserServletResults</servlet-name>
+    <servlet-class>user.web.servlet.UserServletResults</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletResults</servlet-name>
+    <url-pattern>/UserServletResults</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletRegister</display-name>
+    <servlet-name>UserServletRegister</servlet-name>
+    <servlet-class>user.web.servlet.UserServletRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletRegister</servlet-name>
+    <url-pattern>/UserServletRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletLogin</display-name>
+    <servlet-name>UserServletLogin</servlet-name>
+    <servlet-class>user.web.servlet.UserServletLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletLogin</servlet-name>
+    <url-pattern>/UserServletLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findAll</display-name>
+    <servlet-name>findAll</servlet-name>
+    <servlet-class>user.web.servlet.findAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAll</servlet-name>
+    <url-pattern>/findAll</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
